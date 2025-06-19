@@ -2,6 +2,7 @@ import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:gap/gap.dart';
+import 'package:hubx_example/core/utils/extensions/context_extensions.dart';
 import 'package:hubx_example/shared/widgets/reusable_evaleted_button.dart';
 import 'package:hubx_example/shared/widgets/reusable_text.dart';
 import 'package:hubx_example/shared/widgets/spannable.dart';
@@ -19,25 +20,14 @@ class OnboardingPage extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Spannable(
-                'Welcome to %%PlantApp%%',
-                linkStyle: TextStyle(
-                  fontWeight: FontWeight.w600,
-                  fontSize: 28,
-                ),
-                textStyle: TextStyle(
-                  fontWeight: FontWeight.w400,
-                  fontSize: 28,
-                ),
-              ),
+              Spannable('Welcome to %%PlantApp%%',
+                  linkStyle: context.textStyles.b28SemiBold,
+                  textStyle: context.textStyles.b28SemiBold),
               Gap(8.h),
-              const ReusableText(
+              ReusableText(
                 'Identify more than 3000+ plants and 88% accuracy.',
-                style: TextStyle(
-                  fontFamily: 'Roboto',
-                  fontWeight: FontWeight.w400,
-                  fontSize: 16,
-                  color: Color.fromRGBO(19, 35, 27, 0.7),
+                style: context.textStyles.b16Regular.copyWith(
+                  color: context.colors.text.generalText.secondary,
                 ),
               ),
               Gap(40.h),
@@ -49,20 +39,14 @@ class OnboardingPage extends StatelessWidget {
               Gap(16.h),
               Padding(
                 padding: EdgeInsets.symmetric(horizontal: 44.0.w),
-                child: const Spannable(
+                child: Spannable(
                   align: TextAlign.center,
                   'By tapping next, you are agreeing to PlantID %%Terms of Use%% & %%Privacy Policy%%.',
-                  textStyle: TextStyle(
-                    fontFamily: 'Roboto',
-                    fontWeight: FontWeight.w400,
-                    fontSize: 11,
-                    color: Color.fromRGBO(89, 113, 101, 0.7),
+                  textStyle: context.textStyles.b11Regular.copyWith(
+                    color: context.colors.text.generalText.secondaryLight,
                   ),
-                  linkStyle: TextStyle(
-                    fontFamily: 'Roboto',
-                    fontWeight: FontWeight.w400,
-                    fontSize: 11,
-                    color: Color.fromRGBO(89, 113, 101, 0.7),
+                  linkStyle: context.textStyles.b11Regular.copyWith(
+                    color: context.colors.text.generalText.secondaryLight,
                     decoration: TextDecoration.underline,
                   ),
                 ),

@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:hubx_example/core/theme/app_colors.dart';
+import 'package:hubx_example/core/theme/app_text_styles.dart';
+import 'package:hubx_example/core/utils/extensions/theme_extensions.dart';
 
 extension ThemeExtension on BuildContext {
   ThemeData get theme => Theme.of(this);
@@ -26,4 +29,8 @@ extension MediaQueryExtension on BuildContext {
   double get keyboardGap => viewInsets.bottom;
 
   bool get canPop => ModalRoute.of(this)?.canPop ?? false;
+
+  AppTextStyles get textStyles => theme.extension<AppThemeExtension>()!.textStyles;
+
+  AppColors get colors => theme.extension<AppThemeExtension>()!.colors;
 }
