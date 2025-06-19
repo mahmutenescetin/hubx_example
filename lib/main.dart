@@ -1,8 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:hubx_example/core/router/app_router.dart';
+import 'package:hubx_example/core/theme/app_colors.dart';
+import 'package:hubx_example/core/theme/app_text_styles.dart';
+import 'package:hubx_example/core/utils/extensions/theme_extensions.dart';
+import 'package:hubx_example/core/theme/assets.g.dart';
 
 void main() {
   final appRouter = AppRouter();
+
   runApp(MyApp(appRouter: appRouter));
 }
 
@@ -13,12 +19,29 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp.router(
-      routerDelegate: appRouter.delegate(),
-      routeInformationParser: appRouter.defaultRouteParser(),
-      title: 'App Starter',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
+    return ScreenUtilInit(
+      child: MaterialApp.router(
+        routerDelegate: appRouter.delegate(),
+        routeInformationParser: appRouter.defaultRouteParser(),
+        title: 'App Starter',
+        theme: ThemeData.light().copyWith(
+          extensions: [
+            AppThemeExtension(
+              textStyles: AppTextStyles(),
+              colors: AppColors(),
+              assets: const Assets.light(),
+            ),
+          ],
+        ),
+        darkTheme: ThemeData.dark().copyWith(
+          extensions: [
+            AppThemeExtension(
+              textStyles: AppTextStyles(),
+              colors: AppColors(),
+              assets: const Assets.dark(),
+            ),
+          ],
+        ),
       ),
     );
   }
