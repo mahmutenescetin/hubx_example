@@ -1,7 +1,7 @@
 import 'package:auto_route/auto_route.dart';
 
-import '../../features/onboarding/presentation/pages/onboarding_page.dart';
-import '../../features/home/presentation/pages/home_page.dart';
+import 'package:hubx_example/features/onboarding/presentation/pages/onboarding_page.dart';
+import 'package:hubx_example/features/home/presentation/pages/home_page.dart';
 
 part 'app_router.gr.dart';
 

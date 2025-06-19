@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'core/router/app_router.dart';
+import 'package:hubx_example/core/router/app_router.dart';
 
 void main() {
   final appRouter = AppRouter();
@@ -9,7 +9,7 @@ void main() {
 class MyApp extends StatelessWidget {
   final AppRouter appRouter;
 
-  const MyApp({super.key, required this.appRouter});
+  const MyApp({required this.appRouter, super.key});
 
   @override
   Widget build(BuildContext context) {
