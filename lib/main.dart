@@ -4,6 +4,7 @@ import 'package:hubx_example/core/router/app_router.dart';
 import 'package:hubx_example/core/theme/app_colors.dart';
 import 'package:hubx_example/core/theme/app_text_styles.dart';
 import 'package:hubx_example/core/utils/extensions/theme_extensions.dart';
+import 'package:hubx_example/core/theme/assets.g.dart';
 
 void main() {
   final appRouter = AppRouter();
@@ -28,6 +29,7 @@ class MyApp extends StatelessWidget {
             AppThemeExtension(
               textStyles: AppTextStyles(),
               colors: AppColors(),
+              assets: const Assets.light(),
             ),
           ],
         ),
@@ -36,10 +38,10 @@ class MyApp extends StatelessWidget {
             AppThemeExtension(
               textStyles: AppTextStyles(),
               colors: AppColors(),
+              assets: const Assets.dark(),
             ),
           ],
         ),
-        themeMode: ThemeMode.system,
       ),
     );
   }

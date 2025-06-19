@@ -106,7 +106,8 @@ class _SpannableState extends State<Spannable> {
           TextSpan(
             text: formattedText,
             style: widget.textStyle ?? const TextStyle(color: Colors.red),
-            //      context.textStyles.caption.c12Regular.copyWith(color: context.colors.generalText.text.primary,),
+            //      context.textStyles.caption.c12Regular.copyWith
+            //      (color: context.colors.generalText.text.primary,),
             recognizer: widget.onTextPressed != null
                 ? (tapGestureRecognizer
                   ..onTap = () => widget.onTextPressed?.call())
@@ -122,7 +123,8 @@ class _SpannableState extends State<Spannable> {
                   fontWeight: FontWeight.w700,
                 ) ??
                 const TextStyle(color: Colors.red),
-            // context.textStyles.caption.c12Regular.copyWith(color: context.colors.generalText.text.primary,),
+            // context.textStyles.caption.c12Regular.copyWith(
+            // color: context.colors.generalText.text.primary,),
             recognizer: widget.onPressed != null
                 ? (tapGestureRecognizer
                   ..onTap = () => widget.onPressed?.call(

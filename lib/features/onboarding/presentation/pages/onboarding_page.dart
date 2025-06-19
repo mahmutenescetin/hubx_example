@@ -31,7 +31,7 @@ class OnboardingPage extends StatelessWidget {
                 ),
               ),
               Gap(40.h),
-              Image.asset('assets/png/get_started.png'),
+              Image.asset(context.assets.GetStarted),
               ReusableElevatedButton(
                 text: 'Get Started',
                 onPressed: () {},
@@ -41,7 +41,8 @@ class OnboardingPage extends StatelessWidget {
                 padding: EdgeInsets.symmetric(horizontal: 44.0.w),
                 child: Spannable(
                   align: TextAlign.center,
-                  'By tapping next, you are agreeing to PlantID %%Terms of Use%% & %%Privacy Policy%%.',
+                  'By tapping next, you are agreeing to '
+                  'PlantID %%Terms of Use%% & %%Privacy Policy%%.',
                   textStyle: context.textStyles.b11Regular.copyWith(
                     color: context.colors.text.generalText.secondaryLight,
                   ),
