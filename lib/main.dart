@@ -1,21 +1,24 @@
 import 'package:flutter/material.dart';
+import 'core/router/app_router.dart';
 
 void main() {
-  runApp(const MyApp());
+  final appRouter = AppRouter();
+  runApp(MyApp(appRouter: appRouter));
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  final AppRouter appRouter;
+
+  const MyApp({super.key, required this.appRouter});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Hubx Case',
-      theme: ThemeData.light(),
-      darkTheme: ThemeData.dark(),
-      themeMode: ThemeMode.system,
-      home: const Scaffold(
-        body: Center(child: Text('App started')),
+    return MaterialApp.router(
+      routerDelegate: appRouter.delegate(),
+      routeInformationParser: appRouter.defaultRouteParser(),
+      title: 'App Starter',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
       ),
     );
   }
