@@ -15,5 +15,11 @@
   "unlimited": "Limitsiz",
   "plantIdentify": "Bitki Tanımlama",
   "faster": "Daha hızlı",
-  "process": "İşlem"
+  "process": "İşlem",
+  "year": "Yıl",
+  "month": "Ay",
+  "subscription_trial_then_yearly_price": "İlk 3 gün ücretsiz, ardından yıllık 529,9$/yıl",
+  "subscription_monthly_price_auto_renew": "Aylık {price}, otomatik yenilenir",
+  "trial_try_free": "3 gün ücretsiz dene",
+  "trial_description": "3 günlük deneme süresi sona erdikten sonra iptal etmediğiniz sürece yıllık ₺274,99 ücret alınır. Yıllık abonelik otomatik olarak yenilenir."
 }

@@ -2,6 +2,7 @@ import 'package:auto_route/auto_route.dart';
 
 import 'package:hubx_example/features/onboarding/presentation/pages/onboarding_page.dart';
 import 'package:hubx_example/features/home/presentation/pages/home_page.dart';
+import 'package:hubx_example/features/paywall/presentation/pages/paywall_page.dart';
 
 part 'app_router.gr.dart';
 
@@ -17,6 +18,7 @@ class AppRouter extends RootStackRouter {
         // of the replaceInRouteName property
         AutoRoute(page: OnboardingRoute.page, initial: true),
         AutoRoute(page: HomeRoute.page),
+        AutoRoute(page: PaywallRoute.page),
       ];
 
   @override
