@@ -21,4 +21,16 @@ class AppTextStyles {
     fontWeight: FontWeight.w600,
     fontFamily: 'Roboto',
   );
+  // Onboarding özel stiller
+  final TextStyle onboardingTitle = const TextStyle(
+    fontSize: 28,
+    fontWeight: FontWeight.w600,
+    fontFamily: 'Roboto',
+  );
+  final TextStyle onboardingDescription = const TextStyle(
+    fontSize: 16,
+    fontWeight: FontWeight.w400,
+    fontFamily: 'Roboto',
+    color: Color(0xFF13231B), // secondary renk, AppColors ile override edilebilir
+  );
 }
