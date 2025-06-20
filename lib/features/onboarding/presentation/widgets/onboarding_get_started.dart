@@ -12,68 +12,58 @@ class OnboardingGetStarted extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox.expand(
-      child: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 20.w),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Gap(40.h),
-            Spannable(
-              context.l10n.welcomeToPlantApp,
-              linkStyle: context.textStyles.b28SemiBold600
-                  .copyWith(fontWeight: FontWeight.w300),
-              textStyle: context.textStyles.b28SemiBold600,
+    final width = MediaQuery.of(context).size.width;
+    return Padding(
+      padding: EdgeInsets.symmetric(horizontal: 20.w),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Gap(40.h),
+          Spannable(
+            context.l10n.welcomeToPlantApp,
+            linkStyle: context.textStyles.b28SemiBold600
+                .copyWith(fontWeight: FontWeight.w300),
+            textStyle: context.textStyles.b28SemiBold600,
+          ),
+          Gap(8.h),
+          ReusableText(
+            context.l10n.identifyPlantsDescription,
+            style: context.textStyles.b16Regular400.copyWith(
+              color: context.colors.appColors.secondary,
             ),
-            Gap(8.h),
-            ReusableText(
-              context.l10n.identifyPlantsDescription,
-              style: context.textStyles.b16Regular400.copyWith(
-                color: context.colors.appColors.secondary,
-              ),
-            ),
-            Gap(24.h),
-            Center(
-              child: SizedBox(
-                width: 260.w,
-                height: 320.h,
-                child: Stack(
-                  clipBehavior: Clip.none,
-                  alignment: Alignment.center,
-                  children: [
-                    Positioned(
-                      top: 35.w,
-                      left: 180.w,
-                      child: Image.asset(
-                        Assets.png.sun.path,
-                        width: 90.w,
-                      ),
-                    ),
-                    Positioned(
-                      top: 0,
-                      child: Image.asset(
-                        Assets.png.tree.path,
-                        width: MediaQuery.of(context).size.width,
-                        height: 500.h,
-                        fit: BoxFit.contain,
-                      ),
-                    ),
-                    const ScanAnimationView(),
-                    Positioned(
-                      top: -20.w,
-                      right: 160.w,
-                      child: Image.asset(
-                        Assets.png.spray.path,
-                        width: 150.w,
-                      ),
-                    ),
-                  ],
+          ),
+          Gap(24.h),
+          Stack(
+            clipBehavior: Clip.none,
+            children: [
+              Positioned(
+                top: 310,
+                left: 170,
+                child: Image.asset(
+                  Assets.png.blob.path,
                 ),
               ),
-            ),
+              Positioned(
+                top: 30,
+                left: width / 5.5,
+                child: const ScanAnimationView(),
+              ),
+              Align(
+                alignment: const Alignment(0.8, -0.8),
+                child: Image.asset(
+                  Assets.png.sun.path,
+                ),
+              ),
+              Image.asset(
+                Assets.png.tree.path,
+              ),
+              Image.asset(
+                Assets.png.spray.path,
+              ),
 
-          ],
-        ),
+            ],
+          ),
+        ],
       ),
     );
   }
