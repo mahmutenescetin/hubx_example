@@ -6,10 +6,11 @@ import 'package:hubx_example/core/theme/app_colors.dart';
 import 'package:hubx_example/core/theme/app_text_styles.dart';
 import 'package:hubx_example/core/utils/extensions/theme_extensions.dart';
 import 'package:hubx_example/core/theme/assets.g.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:hubx_example/l10n/app_localizations.dart';
 
 void main() {
   final appRouter = AppRouter();
+  WidgetsFlutterBinding.ensureInitialized();
 
   runApp(MyApp(appRouter: appRouter));
 }
@@ -23,9 +24,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return ScreenUtilInit(
       child: Builder(
+
         builder: (context) => MaterialApp.router(
-          routerDelegate: appRouter.delegate(),
-          routeInformationParser: appRouter.defaultRouteParser(),
+          routerConfig: appRouter.config(),
           supportedLocales: const [
             Locale('en'),
             Locale('tr'),
