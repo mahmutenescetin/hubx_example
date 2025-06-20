@@ -1,36 +1,29 @@
 import 'package:flutter/material.dart';
 
 class AppTextStyles {
-  final TextStyle b11Regular = const TextStyle(
+  final TextStyle b11Regular400 = const TextStyle(
     fontSize: 11,
     fontWeight: FontWeight.w400,
     fontFamily: 'Roboto',
   );
-  final TextStyle b14Regular = const TextStyle(
+  final TextStyle b14Regular400 = const TextStyle(
     fontSize: 14,
     fontWeight: FontWeight.w400,
     fontFamily: 'Roboto',
   );
-  final TextStyle b16Regular = const TextStyle(
+  final TextStyle b16Regular400 = const TextStyle(
     fontSize: 16,
     fontWeight: FontWeight.w400,
     fontFamily: 'Roboto',
   );
-  final TextStyle b28SemiBold = const TextStyle(
-    fontSize: 28,
-    fontWeight: FontWeight.w600,
-    fontFamily: 'Roboto',
-  );
-  // Onboarding özel stiller
-  final TextStyle onboardingTitle = const TextStyle(
-    fontSize: 28,
-    fontWeight: FontWeight.w600,
-    fontFamily: 'Roboto',
-  );
-  final TextStyle onboardingDescription = const TextStyle(
+  final TextStyle b16Regular600 = const TextStyle(
     fontSize: 16,
-    fontWeight: FontWeight.w400,
+    fontWeight: FontWeight.w600,
     fontFamily: 'Roboto',
-    color: Color(0xFF13231B), // secondary renk, AppColors ile override edilebilir
+  );
+  final TextStyle b28SemiBold600 = const TextStyle(
+    fontSize: 28,
+    fontWeight: FontWeight.w600,
+    fontFamily: 'Roboto',
   );
 }

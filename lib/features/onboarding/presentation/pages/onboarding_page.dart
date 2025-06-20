@@ -99,10 +99,10 @@ class _OnboardingPageState extends State<OnboardingPage> {
                     child: Spannable(
                       align: TextAlign.center,
                       context.l10n.termsAndPrivacy,
-                      textStyle: context.textStyles.b11Regular.copyWith(
+                      textStyle: context.textStyles.b11Regular400.copyWith(
                         color: context.colors.appColors.secondaryLight,
                       ),
-                      linkStyle: context.textStyles.b11Regular.copyWith(
+                      linkStyle: context.textStyles.b11Regular400.copyWith(
                         color: context.colors.appColors.secondaryLight,
                         decoration: TextDecoration.underline,
                       ),

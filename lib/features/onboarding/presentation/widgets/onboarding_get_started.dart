@@ -21,14 +21,14 @@ class OnboardingGetStarted extends StatelessWidget {
             Gap(40.h),
             Spannable(
               context.l10n.welcomeToPlantApp,
-              linkStyle: context.textStyles.b28SemiBold
+              linkStyle: context.textStyles.b28SemiBold600
                   .copyWith(fontWeight: FontWeight.w300),
-              textStyle: context.textStyles.b28SemiBold,
+              textStyle: context.textStyles.b28SemiBold600,
             ),
             Gap(8.h),
             ReusableText(
               context.l10n.identifyPlantsDescription,
-              style: context.textStyles.b16Regular.copyWith(
+              style: context.textStyles.b16Regular400.copyWith(
                 color: context.colors.appColors.secondary,
               ),
             ),
