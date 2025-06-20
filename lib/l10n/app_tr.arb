@@ -1,0 +1,10 @@
+{
+  "@@locale": "tr",
+  "appTitle": "HubX Örnek",
+  "welcomeToPlantApp": "PlantApp'e Hoş Geldiniz",
+  "identifyPlantsDescription": "3000+ bitkiyi tanımlayın ve %88 doğruluk oranı.",
+  "getStarted": "Başlayın",
+  "termsAndPrivacy": "İleri'ye dokunarak PlantID %%Kullanım Şartları%% ve %%Gizlilik Politikası%%'nı kabul etmiş olursunuz.",
+  "welcome": "Welcome",
+  "login": "Login"
+}
