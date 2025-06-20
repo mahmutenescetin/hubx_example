@@ -21,9 +21,8 @@ class OnboardingGetStarted extends StatelessWidget {
           Gap(40.h),
           Spannable(
             context.l10n.welcomeToPlantApp,
-            linkStyle: context.textStyles.b28SemiBold600
-                .copyWith(fontWeight: FontWeight.w300),
-            textStyle: context.textStyles.b28SemiBold600,
+            linkStyle: context.textStyles.b28SemiBold600,
+            textStyle: context.textStyles.b28SemiBold300,
           ),
           Gap(8.h),
           ReusableText(

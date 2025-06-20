@@ -26,4 +26,9 @@ class AppTextStyles {
     fontWeight: FontWeight.w600,
     fontFamily: 'Roboto',
   );
+  final TextStyle b28SemiBold300 = const TextStyle(
+    fontSize: 28,
+    fontWeight: FontWeight.w300,
+    fontFamily: 'Roboto',
+  );
 }

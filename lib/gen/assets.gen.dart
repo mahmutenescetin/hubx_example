@@ -15,6 +15,9 @@ class $AssetsPngGen {
   /// File path: assets/png/blob.png
   AssetGenImage get blob => const AssetGenImage('assets/png/blob.png');
 
+  /// File path: assets/png/phone.png
+  AssetGenImage get phone => const AssetGenImage('assets/png/phone.png');
+
   /// File path: assets/png/spray.png
   AssetGenImage get spray => const AssetGenImage('assets/png/spray.png');
 
@@ -25,24 +28,13 @@ class $AssetsPngGen {
   AssetGenImage get tree => const AssetGenImage('assets/png/tree.png');
 
   /// List of all assets
-  List<AssetGenImage> get values => [blob, spray, sun, tree];
-}
-
-class $AssetsSvgGen {
-  const $AssetsSvgGen();
-
-  /// File path: assets/svg/sprey_deneme.svg
-  String get spreyDeneme => 'assets/svg/sprey_deneme.svg';
-
-  /// List of all assets
-  List<String> get values => [spreyDeneme];
+  List<AssetGenImage> get values => [blob, phone, spray, sun, tree];
 }
 
 class Assets {
   const Assets._();
 
   static const $AssetsPngGen png = $AssetsPngGen();
-  static const $AssetsSvgGen svg = $AssetsSvgGen();
 }
 
 class AssetGenImage {
