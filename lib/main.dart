@@ -37,7 +37,7 @@ class MyApp extends StatelessWidget {
             GlobalCupertinoLocalizations.delegate,
             GlobalWidgetsLocalizations.delegate,
           ],
-          locale: const Locale('tr'),
+          locale: const Locale('en'),
           title: 'App Starter',
           theme: ThemeData.light().copyWith(
             extensions: [

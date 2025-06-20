@@ -40,4 +40,5 @@ extension MediaQueryExtension on BuildContext {
   Assets get assets => theme.extension<AppThemeExtension>()!.assets;
 
   AppLocalizations get l10n => AppLocalizations.of(this)!;
+
 }

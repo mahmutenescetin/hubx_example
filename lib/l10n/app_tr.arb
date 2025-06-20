@@ -1,10 +1,19 @@
 {
   "@@locale": "tr",
   "appTitle": "HubX Örnek",
-  "welcomeToPlantApp": "PlantApp'e Hoş Geldiniz",
+  "welcomeToPlantApp": "PlantApp'e %%Hoş Geldiniz%%",
   "identifyPlantsDescription": "3000+ bitkiyi tanımlayın ve %88 doğruluk oranı.",
   "getStarted": "Başlayın",
   "termsAndPrivacy": "İleri'ye dokunarak PlantID %%Kullanım Şartları%% ve %%Gizlilik Politikası%%'nı kabul etmiş olursunuz.",
   "welcome": "Welcome",
-  "login": "Login"
+  "login": "Giriş",
+  "continueText": "Devam Et",
+  "takePhoneIdentify": "Bitkiyi %%tanımlamak%% için fotoğrafını çekin!",
+  "getPlantCareGuides": "Bitki %%Bakım Kılavuzlarını%% edinin",
+  "plantAppPremium": "%%PlantAPP%% Premium",
+  "accessAllFeatures": "Tüm Özelliklere Erişim",
+  "unlimited": "Limitsiz",
+  "plantIdentify": "Bitki Tanımlama",
+  "faster": "Daha hızlı",
+  "process": "İşlem"
 }
