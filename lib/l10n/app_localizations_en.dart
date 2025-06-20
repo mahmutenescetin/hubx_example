@@ -28,4 +28,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get takePhoneIdentify => 'Take a photo to %%identify%% the plant!';
+
+  @override
+  String get getPlantCareGuides => 'Get plant %%care guides%%';
 }

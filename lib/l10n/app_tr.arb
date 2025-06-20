@@ -8,5 +8,12 @@
   "welcome": "Welcome",
   "login": "Giriş",
   "continueText": "Devam Et",
-  "takePhoneIdentify": "Bitkiyi %%tanımlamak%% için fotoğrafını çekin!"
+  "takePhoneIdentify": "Bitkiyi %%tanımlamak%% için fotoğrafını çekin!",
+  "getPlantCareGuides": "Bitki %%Bakım Kılavuzlarını%% edinin",
+  "plantAppPremium": "%%PlantAPP%% Premium",
+  "accessAllFeatures": "Tüm Özelliklere Erişim",
+  "unlimited": "Limitsiz",
+  "plantIdentify": "Bitki Tanımlama",
+  "faster": "Daha hızlı",
+  "process": "İşlem"
 }

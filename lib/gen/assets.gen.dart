@@ -15,11 +15,25 @@ class $AssetsPngGen {
   /// File path: assets/png/blob.png
   AssetGenImage get blob => const AssetGenImage('assets/png/blob.png');
 
+  /// File path: assets/png/bookmark_icon.png
+  AssetGenImage get bookmarkIcon =>
+      const AssetGenImage('assets/png/bookmark_icon.png');
+
   /// File path: assets/png/line.png
   AssetGenImage get line => const AssetGenImage('assets/png/line.png');
 
+  /// File path: assets/png/onboarding_background.png
+  AssetGenImage get onboardingBackground =>
+      const AssetGenImage('assets/png/onboarding_background.png');
+
   /// File path: assets/png/phone.png
   AssetGenImage get phone => const AssetGenImage('assets/png/phone.png');
+
+  /// File path: assets/png/phone_2.png
+  AssetGenImage get phone2 => const AssetGenImage('assets/png/phone_2.png');
+
+  /// File path: assets/png/plant.png
+  AssetGenImage get plant => const AssetGenImage('assets/png/plant.png');
 
   /// File path: assets/png/spray.png
   AssetGenImage get spray => const AssetGenImage('assets/png/spray.png');
@@ -31,7 +45,18 @@ class $AssetsPngGen {
   AssetGenImage get tree => const AssetGenImage('assets/png/tree.png');
 
   /// List of all assets
-  List<AssetGenImage> get values => [blob, line, phone, spray, sun, tree];
+  List<AssetGenImage> get values => [
+    blob,
+    bookmarkIcon,
+    line,
+    onboardingBackground,
+    phone,
+    phone2,
+    plant,
+    spray,
+    sun,
+    tree,
+  ];
 }
 
 class Assets {

@@ -27,5 +27,33 @@
   "takePhoneIdentify": "Take a photo to %%identify%% the plant!",
   "@takePhoneIdentify": {
     "description": "Take a photo to identify the plant!"
+  },
+  "getPlantCareGuides": "Get plant %%care guides%%",
+  "@getPlantCareGuides": {
+    "description": "Get plant %%care guides%%"
+  },
+  "plantAppPremium": "%%PlantAPP%% Premium",
+  "@plantAppPremium": {
+    "description": "%%PlantAPP%% Premium"
+  },
+  "accessAllFeatures": "Access All Features",
+  "@accessAllFeatures": {
+    "description": "Access All Features"
+  },
+  "unlimited": "Unlimited",
+  "@unlimited": {
+    "description": "Unlimited"
+  },
+  "plantIdentify": "Plant Identify",
+  "@plantIdentify": {
+    "description": "Plant Identify"
+  },
+  "faster": "Faster",
+  "@faster": {
+    "description": "Faster"
+  },
+  "process": "Process",
+  "@process": {
+    "description": "Process"
   }
 }

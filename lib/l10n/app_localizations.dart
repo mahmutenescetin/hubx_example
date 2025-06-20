@@ -136,6 +136,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Take a photo to %%identify%% the plant!'**
   String get takePhoneIdentify;
+
+  /// Get plant %%care guides%%
+  ///
+  /// In en, this message translates to:
+  /// **'Get plant %%care guides%%'**
+  String get getPlantCareGuides;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

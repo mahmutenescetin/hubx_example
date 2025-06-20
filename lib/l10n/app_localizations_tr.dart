@@ -28,4 +28,7 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get takePhoneIdentify => 'Bitkiyi %%tanımlamak%% için fotoğrafını çekin!';
+
+  @override
+  String get getPlantCareGuides => 'Bitki %%Bakım Kılavuzlarını%% edinin';
 }
