@@ -3,7 +3,6 @@ description: Hubx example app
 
 publish_to: 'none'
 
-
 version: 1.0.0+1
 
 environment:
@@ -20,6 +19,9 @@ dependencies:
   equatable: ^2.0.5
   gap: any
   flutter_screenutil: ^5.9.3
+  flutter_localizations:
+    sdk: flutter
+  intl: ^0.18.1
 
 dev_dependencies:
   flutter_test:
@@ -30,12 +32,12 @@ dev_dependencies:
   bloc_test: ^9.1.5
   mocktail: ^1.0.2
   flutter_lints: ^3.0.1
-
-
+  flutter_gen_runner: ^5.4.0
 
 flutter:
-
   uses-material-design: true
+  generate: true
+
   assets:
     - assets/png/
 
@@ -48,3 +50,9 @@ flutter:
           weight: 500
         - asset: assets/fonts/Roboto-SemiBold.ttf
           weight: 600
+
+l10n:
+  arb-dir: lib/core/l10n
+  template-arb-file: app_en.arb
+  output-localization-file: app_localizations.dart
+  output-class: AppLocalizations

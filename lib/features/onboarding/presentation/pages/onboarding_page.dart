@@ -20,12 +20,12 @@ class OnboardingPage extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Spannable('Welcome to %%PlantApp%%',
+              Spannable(context.l10n.welcomeToPlantApp,
                   linkStyle: context.textStyles.b28SemiBold,
                   textStyle: context.textStyles.b28SemiBold),
               Gap(8.h),
               ReusableText(
-                'Identify more than 3000+ plants and 88% accuracy.',
+                context.l10n.identifyPlantsDescription,
                 style: context.textStyles.b16Regular.copyWith(
                   color: context.colors.text.generalText.secondary,
                 ),
@@ -33,7 +33,7 @@ class OnboardingPage extends StatelessWidget {
               Gap(40.h),
               Image.asset(context.assets.GetStarted),
               ReusableElevatedButton(
-                text: 'Get Started',
+                text: context.l10n.getStarted,
                 onPressed: () {},
               ),
               Gap(16.h),
@@ -41,8 +41,7 @@ class OnboardingPage extends StatelessWidget {
                 padding: EdgeInsets.symmetric(horizontal: 44.0.w),
                 child: Spannable(
                   align: TextAlign.center,
-                  'By tapping next, you are agreeing to '
-                  'PlantID %%Terms of Use%% & %%Privacy Policy%%.',
+                  context.l10n.termsAndPrivacy,
                   textStyle: context.textStyles.b11Regular.copyWith(
                     color: context.colors.text.generalText.secondaryLight,
                   ),
