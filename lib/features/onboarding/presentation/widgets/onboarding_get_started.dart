@@ -12,7 +12,6 @@ class OnboardingGetStarted extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final width = MediaQuery.of(context).size.width;
     return Padding(
       padding: EdgeInsets.symmetric(horizontal: 20.w),
       child: Column(
@@ -44,7 +43,7 @@ class OnboardingGetStarted extends StatelessWidget {
               ),
               Positioned(
                 top: 30,
-                left: width / 5.5,
+                left: context.width / 5.5,
                 child: const ScanAnimationView(),
               ),
               Align(
@@ -59,7 +58,6 @@ class OnboardingGetStarted extends StatelessWidget {
               Image.asset(
                 Assets.png.spray.path,
               ),
-
             ],
           ),
         ],

@@ -23,5 +23,9 @@
   "continueText": "Continue",
   "@continueText": {
     "description": "Continue"
+  },
+  "takePhoneIdentify": "Take a photo to %%identify%% the plant!",
+  "@takePhoneIdentify": {
+    "description": "Take a photo to identify the plant!"
   }
 }

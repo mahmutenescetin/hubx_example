@@ -15,6 +15,9 @@ class $AssetsPngGen {
   /// File path: assets/png/blob.png
   AssetGenImage get blob => const AssetGenImage('assets/png/blob.png');
 
+  /// File path: assets/png/line.png
+  AssetGenImage get line => const AssetGenImage('assets/png/line.png');
+
   /// File path: assets/png/phone.png
   AssetGenImage get phone => const AssetGenImage('assets/png/phone.png');
 
@@ -28,7 +31,7 @@ class $AssetsPngGen {
   AssetGenImage get tree => const AssetGenImage('assets/png/tree.png');
 
   /// List of all assets
-  List<AssetGenImage> get values => [blob, phone, spray, sun, tree];
+  List<AssetGenImage> get values => [blob, line, phone, spray, sun, tree];
 }
 
 class Assets {

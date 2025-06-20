@@ -25,4 +25,7 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get continueText => 'Devam Et';
+
+  @override
+  String get takePhoneIdentify => 'Bitkiyi %%tanımlamak%% için fotoğrafını çekin!';
 }

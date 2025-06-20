@@ -1,4 +1,5 @@
 import 'package:auto_route/auto_route.dart';
+import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -94,20 +95,27 @@ class _OnboardingPageState extends State<OnboardingPage> {
                         : context.l10n.continueText,
                   ),
                   Gap(10.h),
-                  Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 24.w),
-                    child: Spannable(
-                      align: TextAlign.center,
-                      context.l10n.termsAndPrivacy,
-                      textStyle: context.textStyles.b11Regular400.copyWith(
-                        color: context.colors.appColors.secondaryLight,
+                  if (state == 0)
+                    Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 24.w),
+                      child: Spannable(
+                        align: TextAlign.center,
+                        context.l10n.termsAndPrivacy,
+                        textStyle: context.textStyles.b11Regular400.copyWith(
+                          color: context.colors.appColors.secondaryLight,
+                        ),
+                        linkStyle: context.textStyles.b11Regular400.copyWith(
+                          color: context.colors.appColors.secondaryLight,
+                          decoration: TextDecoration.underline,
+                        ),
                       ),
-                      linkStyle: context.textStyles.b11Regular400.copyWith(
-                        color: context.colors.appColors.secondaryLight,
-                        decoration: TextDecoration.underline,
-                      ),
+                    )
+                  else
+                    DotsIndicator(
+                      dotsCount: 3,
+                      animate: true,
+                      position: state.toDouble() - 1,
                     ),
-                  ),
                   Gap(20.h),
                 ],
               ),
