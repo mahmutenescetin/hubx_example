@@ -1,59 +1,27 @@
 {
   "@@locale": "en",
   "appTitle": "HubX Example",
-  "@appTitle": {
-    "description": "The title of the application"
-  },
   "welcomeToPlantApp": "Welcome to %%PlantApp%%",
-  "@welcomeToPlantApp": {
-    "description": "Welcome message on onboarding page"
-  },
   "identifyPlantsDescription": "Identify more than 3000+ plants and 88% accuracy.",
-  "@identifyPlantsDescription": {
-    "description": "Description text on onboarding page"
-  },
   "getStarted": "Get Started",
-  "@getStarted": {
-    "description": "Get started button text"
-  },
   "termsAndPrivacy": "By tapping next, you are agreeing to PlantID %%Terms of Use%% & %%Privacy Policy%%.",
-  "@termsAndPrivacy": {
-    "description": "Terms and privacy policy text"
-  },
   "continueText": "Continue",
-  "@continueText": {
-    "description": "Continue"
-  },
   "takePhoneIdentify": "Take a photo to %%identify%% the plant!",
-  "@takePhoneIdentify": {
-    "description": "Take a photo to identify the plant!"
-  },
   "getPlantCareGuides": "Get plant %%care guides%%",
-  "@getPlantCareGuides": {
-    "description": "Get plant %%care guides%%"
-  },
   "plantAppPremium": "%%PlantAPP%% Premium",
-  "@plantAppPremium": {
-    "description": "%%PlantAPP%% Premium"
-  },
   "accessAllFeatures": "Access All Features",
-  "@accessAllFeatures": {
-    "description": "Access All Features"
-  },
   "unlimited": "Unlimited",
-  "@unlimited": {
-    "description": "Unlimited"
-  },
   "plantIdentify": "Plant Identify",
-  "@plantIdentify": {
-    "description": "Plant Identify"
-  },
   "faster": "Faster",
-  "@faster": {
-    "description": "Faster"
-  },
   "process": "Process",
-  "@process": {
-    "description": "Process"
-  }
+  "month": "Month",
+  "year": "Year",
+  "subscription_monthly_auto_renew": "$2.99/month, auto renewable",
+  "subscription_trial_then_yearly_price": "First 3 days free, then $529.99/year",
+  "trial_try_free": "Try free for 3 days",
+  "trial_description": "After the 3-day free trial period you’ll be charged ₺274.99 per year unless you cancel before the trial expires. Yearly Subscription is Auto-Renewable.",
+  "terms": "Terms",
+  "privacy": "Privacy",
+  "restore": "Restore",
+  "save": "Save"
 }

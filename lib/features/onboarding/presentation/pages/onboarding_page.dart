@@ -87,7 +87,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
                           curve: Curves.easeInOut,
                         );
                       } else {
-                        context.router.replace(const HomeRoute());
+                        context.router.replace(const PaywallRoute());
                       }
                     },
                     text: state < 1

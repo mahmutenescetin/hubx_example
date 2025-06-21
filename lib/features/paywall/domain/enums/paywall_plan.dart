@@ -1,0 +1,4 @@
+enum PaywallPlan {
+  monthly,
+  yearly,
+}
