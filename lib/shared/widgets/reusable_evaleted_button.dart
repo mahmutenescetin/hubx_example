@@ -37,8 +37,8 @@ class ReusableElevatedButton extends StatelessWidget {
             ),
         decoration: boxDecoration ??
             BoxDecoration(
-              color: const Color.fromRGBO(40, 175, 110, 1),
-              borderRadius: BorderRadius.circular(borderRadius ?? 12),
+              color: context.colors.appColors.buttonColor,
+              borderRadius: BorderRadius.circular(borderRadius ?? 12.r),
             ),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,

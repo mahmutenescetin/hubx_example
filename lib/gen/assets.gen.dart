@@ -12,49 +12,39 @@ import 'package:flutter/widgets.dart';
 class $AssetsPngGen {
   const $AssetsPngGen();
 
-  /// File path: assets/png/blob.png
-  AssetGenImage get blob => const AssetGenImage('assets/png/blob.png');
-
-  /// File path: assets/png/bookmark_icon.png
-  AssetGenImage get bookmarkIcon =>
-      const AssetGenImage('assets/png/bookmark_icon.png');
+  /// File path: assets/png/faster_icon.png
+  AssetGenImage get fasterIcon =>
+      const AssetGenImage('assets/png/faster_icon.png');
 
   /// File path: assets/png/line.png
   AssetGenImage get line => const AssetGenImage('assets/png/line.png');
 
-  /// File path: assets/png/onboarding_background.png
-  AssetGenImage get onboardingBackground =>
-      const AssetGenImage('assets/png/onboarding_background.png');
+  /// File path: assets/png/onboarding.png
+  AssetGenImage get onboarding =>
+      const AssetGenImage('assets/png/onboarding.png');
 
-  /// File path: assets/png/phone.png
-  AssetGenImage get phone => const AssetGenImage('assets/png/phone.png');
-
-  /// File path: assets/png/phone_2.png
-  AssetGenImage get phone2 => const AssetGenImage('assets/png/phone_2.png');
+  /// File path: assets/png/onboarding_care_guides.png
+  AssetGenImage get onboardingCareGuides =>
+      const AssetGenImage('assets/png/onboarding_care_guides.png');
 
   /// File path: assets/png/plant.png
   AssetGenImage get plant => const AssetGenImage('assets/png/plant.png');
 
-  /// File path: assets/png/spray.png
-  AssetGenImage get spray => const AssetGenImage('assets/png/spray.png');
-
-  /// File path: assets/png/sun.png
-  AssetGenImage get sun => const AssetGenImage('assets/png/sun.png');
+  /// File path: assets/png/scanner_icon.png
+  AssetGenImage get scannerIcon =>
+      const AssetGenImage('assets/png/scanner_icon.png');
 
   /// File path: assets/png/tree.png
   AssetGenImage get tree => const AssetGenImage('assets/png/tree.png');
 
   /// List of all assets
   List<AssetGenImage> get values => [
-    blob,
-    bookmarkIcon,
+    fasterIcon,
     line,
-    onboardingBackground,
-    phone,
-    phone2,
+    onboarding,
+    onboardingCareGuides,
     plant,
-    spray,
-    sun,
+    scannerIcon,
     tree,
   ];
 }

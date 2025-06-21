@@ -11,11 +11,6 @@ class OnboardingCareGuides extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        Image.asset(
-          Assets.png.onboardingBackground.path,
-          width: context.width,
-          fit: BoxFit.fitWidth,
-        ),
         Padding(
           padding: EdgeInsetsGeometry.symmetric(horizontal: 10.w),
           child: Spannable(
@@ -25,34 +20,18 @@ class OnboardingCareGuides extends StatelessWidget {
           ),
         ),
         Align(
+          alignment: const Alignment(0.5, -0.9),
+          child: Image.asset(
+            width: 150.w,
+            Assets.png.line.path,
+            fit: BoxFit.contain,
+          ),
+        ),
+        Align(
           alignment: Alignment.bottomCenter,
           child: Image.asset(
-            Assets.png.phone2.path,
+            Assets.png.onboardingCareGuides.path,
             fit: BoxFit.contain,
-          ),
-        ),
-        Align(
-          alignment: const Alignment(1.0, -0.4),
-          child: Image.asset(
-            Assets.png.bookmarkIcon.path,
-            fit: BoxFit.contain,
-            height: 200,
-          ),
-        ),
-        Align(
-          alignment: const Alignment(0.1, -0.5),
-          child: Image.asset(
-            Assets.png.spray.path,
-            fit: BoxFit.contain,
-            height: 200,
-          ),
-        ),
-        Align(
-          alignment: const Alignment(1.3, -0.25),
-          child: Image.asset(
-            Assets.png.sun.path,
-            fit: BoxFit.contain,
-            height: 200,
           ),
         ),
       ],

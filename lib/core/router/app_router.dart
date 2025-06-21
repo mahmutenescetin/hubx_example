@@ -9,20 +9,19 @@ part 'app_router.gr.dart';
 @AutoRouterConfig(replaceInRouteName: 'Screen|Page,Route')
 class AppRouter extends RootStackRouter {
   @override
-  RouteType get defaultRouteType =>
-      const RouteType.material(); //.cupertino, .adaptive ..etc
+  RouteType get defaultRouteType => const RouteType.material();
 
   @override
   List<AutoRoute> get routes => [
-        // HomeScreen is generated as HomeRoute because
-        // of the replaceInRouteName property
         AutoRoute(page: OnboardingRoute.page, initial: true),
         AutoRoute(page: HomeRoute.page),
-        AutoRoute(page: PaywallRoute.page),
+        CustomRoute(
+          page: PaywallRoute.page,
+          transitionsBuilder: TransitionsBuilders.slideLeftWithFade,
+          duration: const Duration(milliseconds: 400),
+        ),
       ];
 
   @override
-  List<AutoRouteGuard> get guards => [
-        // optionally add root guards here
-      ];
+  List<AutoRouteGuard> get guards => [];
 }

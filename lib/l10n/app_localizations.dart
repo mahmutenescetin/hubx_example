@@ -95,53 +95,149 @@ abstract class AppLocalizations {
     Locale('tr')
   ];
 
-  /// The title of the application
+  /// No description provided for @appTitle.
   ///
   /// In en, this message translates to:
   /// **'HubX Example'**
   String get appTitle;
 
-  /// Welcome message on onboarding page
+  /// No description provided for @welcomeToPlantApp.
   ///
   /// In en, this message translates to:
   /// **'Welcome to %%PlantApp%%'**
   String get welcomeToPlantApp;
 
-  /// Description text on onboarding page
+  /// No description provided for @identifyPlantsDescription.
   ///
   /// In en, this message translates to:
   /// **'Identify more than 3000+ plants and 88% accuracy.'**
   String get identifyPlantsDescription;
 
-  /// Get started button text
+  /// No description provided for @getStarted.
   ///
   /// In en, this message translates to:
   /// **'Get Started'**
   String get getStarted;
 
-  /// Terms and privacy policy text
+  /// No description provided for @termsAndPrivacy.
   ///
   /// In en, this message translates to:
   /// **'By tapping next, you are agreeing to PlantID %%Terms of Use%% & %%Privacy Policy%%.'**
   String get termsAndPrivacy;
 
-  /// Continue
+  /// No description provided for @continueText.
   ///
   /// In en, this message translates to:
   /// **'Continue'**
   String get continueText;
 
-  /// Take a photo to identify the plant!
+  /// No description provided for @takePhoneIdentify.
   ///
   /// In en, this message translates to:
   /// **'Take a photo to %%identify%% the plant!'**
   String get takePhoneIdentify;
 
-  /// Get plant %%care guides%%
+  /// No description provided for @getPlantCareGuides.
   ///
   /// In en, this message translates to:
   /// **'Get plant %%care guides%%'**
   String get getPlantCareGuides;
+
+  /// No description provided for @plantAppPremium.
+  ///
+  /// In en, this message translates to:
+  /// **'%%PlantAPP%% Premium'**
+  String get plantAppPremium;
+
+  /// No description provided for @accessAllFeatures.
+  ///
+  /// In en, this message translates to:
+  /// **'Access All Features'**
+  String get accessAllFeatures;
+
+  /// No description provided for @unlimited.
+  ///
+  /// In en, this message translates to:
+  /// **'Unlimited'**
+  String get unlimited;
+
+  /// No description provided for @plantIdentify.
+  ///
+  /// In en, this message translates to:
+  /// **'Plant Identify'**
+  String get plantIdentify;
+
+  /// No description provided for @faster.
+  ///
+  /// In en, this message translates to:
+  /// **'Faster'**
+  String get faster;
+
+  /// No description provided for @process.
+  ///
+  /// In en, this message translates to:
+  /// **'Process'**
+  String get process;
+
+  /// No description provided for @month.
+  ///
+  /// In en, this message translates to:
+  /// **'Month'**
+  String get month;
+
+  /// No description provided for @year.
+  ///
+  /// In en, this message translates to:
+  /// **'Year'**
+  String get year;
+
+  /// No description provided for @subscription_monthly_auto_renew.
+  ///
+  /// In en, this message translates to:
+  /// **'\$2.99/month, auto renewable'**
+  String get subscription_monthly_auto_renew;
+
+  /// No description provided for @subscription_trial_then_yearly_price.
+  ///
+  /// In en, this message translates to:
+  /// **'First 3 days free, then \$529.99/year'**
+  String get subscription_trial_then_yearly_price;
+
+  /// No description provided for @trial_try_free.
+  ///
+  /// In en, this message translates to:
+  /// **'Try free for 3 days'**
+  String get trial_try_free;
+
+  /// No description provided for @trial_description.
+  ///
+  /// In en, this message translates to:
+  /// **'After the 3-day free trial period you’ll be charged ₺274.99 per year unless you cancel before the trial expires. Yearly Subscription is Auto-Renewable.'**
+  String get trial_description;
+
+  /// No description provided for @terms.
+  ///
+  /// In en, this message translates to:
+  /// **'Terms'**
+  String get terms;
+
+  /// No description provided for @privacy.
+  ///
+  /// In en, this message translates to:
+  /// **'Privacy'**
+  String get privacy;
+
+  /// No description provided for @restore.
+  ///
+  /// In en, this message translates to:
+  /// **'Restore'**
+  String get restore;
+
+  /// No description provided for @save.
+  ///
+  /// In en, this message translates to:
+  /// **'Save'**
+  String get save;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

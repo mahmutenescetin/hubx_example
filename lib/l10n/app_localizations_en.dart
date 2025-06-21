@@ -31,4 +31,52 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get getPlantCareGuides => 'Get plant %%care guides%%';
+
+  @override
+  String get plantAppPremium => '%%PlantAPP%% Premium';
+
+  @override
+  String get accessAllFeatures => 'Access All Features';
+
+  @override
+  String get unlimited => 'Unlimited';
+
+  @override
+  String get plantIdentify => 'Plant Identify';
+
+  @override
+  String get faster => 'Faster';
+
+  @override
+  String get process => 'Process';
+
+  @override
+  String get month => 'Month';
+
+  @override
+  String get year => 'Year';
+
+  @override
+  String get subscription_monthly_auto_renew => '\$2.99/month, auto renewable';
+
+  @override
+  String get subscription_trial_then_yearly_price => 'First 3 days free, then \$529.99/year';
+
+  @override
+  String get trial_try_free => 'Try free for 3 days';
+
+  @override
+  String get trial_description => 'After the 3-day free trial period you’ll be charged ₺274.99 per year unless you cancel before the trial expires. Yearly Subscription is Auto-Renewable.';
+
+  @override
+  String get terms => 'Terms';
+
+  @override
+  String get privacy => 'Privacy';
+
+  @override
+  String get restore => 'Restore';
+
+  @override
+  String get save => 'Save';
 }

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:hubx_example/core/utils/extensions/context_extensions.dart';
-import 'package:hubx_example/features/onboarding/presentation/widgets/scan_animation_view.dart';
 import 'package:hubx_example/gen/assets.gen.dart';
 import 'package:hubx_example/shared/widgets/spannable.dart';
 
@@ -10,51 +10,45 @@ class OnboardingIdentifyPlant extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(
-        horizontal: 24,
+      padding: EdgeInsets.symmetric(
+        horizontal: 20.w,
       ),
       child: Stack(
         children: [
-          Spannable(
-            context.l10n.takePhoneIdentify,
-            textStyle: context.textStyles.b28SemiBold500,
-            linkStyle: context.textStyles.b28SemiBold800,
-          ),
-          Positioned(
-            top: 30,
-            left: context.width / 2,
-            child: Container(
-              transformAlignment: Alignment.center,
-              transform: Matrix4.rotationZ(
-                0.1,
-              ),
-              child: Image.asset(
-                Assets.png.line.path,
-                width: 200,
-                fit: BoxFit.fitHeight,
+          SizedBox(
+            width: context.width.w * 0.7.w,
+            child: Align(
+              alignment: const Alignment(-1, -0.9),
+              child: Spannable(
+                context.l10n.takePhoneIdentify,
+                textStyle: context.textStyles.b28SemiBold500,
+                linkStyle: context.textStyles.b28SemiBold800,
               ),
             ),
           ),
-          Positioned(
-            top: 55,
-            left: 35,
+          Align(
+            alignment: const Alignment(1, -0.8),
             child: Image.asset(
-              Assets.png.tree.path,
-              height: 400,
-              fit: BoxFit.fitHeight,
+              width: 150.w,
+              Assets.png.line.path,
+              fit: BoxFit.contain,
             ),
           ),
-          Positioned(
-            top: 50,
-            child: Image.asset(
-              Assets.png.phone.path,
-            ),
-          ),
-          Positioned(
-            top: context.height / 4,
-            left: context.width / 5.1,
-            child: const ScanAnimationView(),
-          ),
+          Stack(
+            clipBehavior: Clip.none,
+            children: [
+              Positioned(
+                top: 0,
+                left: 0,
+                right: 0,
+                child: Image.asset(
+                  Assets.png.onboarding.path,
+                  fit: BoxFit.fitHeight,
+                  height: 650.h,
+                ),
+              ),
+            ],
+          )
         ],
       ),
     );

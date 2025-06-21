@@ -19,5 +19,9 @@
   "subscription_monthly_auto_renew": "$2.99/month, auto renewable",
   "subscription_trial_then_yearly_price": "First 3 days free, then $529.99/year",
   "trial_try_free": "Try free for 3 days",
-  "trial_description": "After the 3-day free trial period you’ll be charged ₺274.99 per year unless you cancel before the trial expires. Yearly Subscription is Auto-Renewable."
+  "trial_description": "After the 3-day free trial period you’ll be charged ₺274.99 per year unless you cancel before the trial expires. Yearly Subscription is Auto-Renewable.",
+  "terms": "Terms",
+  "privacy": "Privacy",
+  "restore": "Restore",
+  "save": "Save"
 }
