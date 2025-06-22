@@ -11,9 +11,6 @@ class DioClient {
       ..interceptors.add(LogInterceptor(
         requestBody: true,
         responseBody: true,
-        requestHeader: true,
-        responseHeader: true,
-        error: true,
         logPrint: (obj) => print('🌐 DIO LOG: $obj'),
       ));
   }

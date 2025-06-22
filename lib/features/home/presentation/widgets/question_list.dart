@@ -73,7 +73,7 @@ class _QuestionCard extends StatelessWidget {
           children: [
             const SizedBox(height: 8),
             ReusableText(
-              "question.question",
+              question.question,
               style: Theme.of(context).textTheme.bodyLarge,
             ),
             const SizedBox(height: 16),

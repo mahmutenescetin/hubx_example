@@ -90,7 +90,6 @@ class _CategoryCard extends StatelessWidget {
               ),
             ),
           Expanded(
-            flex: 1,
             child: Padding(
               padding: const EdgeInsets.all(8.0),
               child: ReusableText(
@@ -104,4 +103,4 @@ class _CategoryCard extends StatelessWidget {
       ),
     );
   }
-} 
+}

@@ -15,7 +15,7 @@ class QuestionModel extends Question {
     final String subtitle = json['subtitle'] ?? '';
     final String uri = json['uri'] ?? '';
 
-    List<String> optionsList = [];
+    final List<String> optionsList = [];
     if (subtitle.isNotEmpty) {
       optionsList.add(subtitle);
     }
