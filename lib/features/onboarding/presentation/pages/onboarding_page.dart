@@ -38,7 +38,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
     super.dispose();
   }
 
-  void _onComplete() async {
+  Future<void> _onComplete() async {
     final userService = getIt<UserService>();
     await userService.setFirstTimeComplete();
     await userService.setOnboardingComplete();

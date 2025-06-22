@@ -1,8 +1,6 @@
 import 'package:get_it/get_it.dart';
 import 'package:dio/dio.dart';
-import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-
 import 'package:hubx_example/core/network/dio_client.dart';
 import 'package:hubx_example/core/router/app_router.dart';
 import 'package:hubx_example/core/services/user_service.dart';

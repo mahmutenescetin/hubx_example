@@ -13,4 +13,4 @@ class DiagnosePage extends StatelessWidget {
       ),
     );
   }
-} 
+}
