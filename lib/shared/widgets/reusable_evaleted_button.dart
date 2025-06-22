@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:hubx_example/core/utils/extensions/context_extensions.dart';
 import 'package:hubx_example/shared/widgets/reusable_text.dart';
 
 class ReusableElevatedButton extends StatelessWidget {
@@ -31,13 +32,13 @@ class ReusableElevatedButton extends StatelessWidget {
       child: Container(
         padding: containerPadding ??
             EdgeInsets.symmetric(
-              horizontal: 12.w,
-              vertical: 12.h,
+              horizontal: 16.w,
+              vertical: 16.h,
             ),
         decoration: boxDecoration ??
             BoxDecoration(
-              color: const Color.fromRGBO(40, 175, 110, 1),
-              borderRadius: BorderRadius.circular(borderRadius ?? 12),
+              color: context.colors.appColors.buttonColor,
+              borderRadius: BorderRadius.circular(borderRadius ?? 12.r),
             ),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -47,10 +48,8 @@ class ReusableElevatedButton extends StatelessWidget {
               child: ReusableText(
                 text,
                 style: textStyle ??
-                    const TextStyle(
-                      color: Colors.white,
-                      fontWeight: FontWeight.w600,
-                      fontSize: 16,
+                    context.textStyles.b16Regular600.copyWith(
+                      color: context.colors.appColors.white,
                     ),
                 textAlign: TextAlign.center,
               ),
