@@ -89,15 +89,15 @@ class _HomePageState extends State<HomePage> {
                       final state = snapshot.data ?? GetIt.I<HomeCubit>().state;
 
                       if (state is HomeLoading) {
-                        return const Center(
+                        return Center(
                           child: Padding(
-                            padding: EdgeInsets.all(20.0),
+                            padding: const EdgeInsets.all(20.0),
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                CircularProgressIndicator(),
-                                SizedBox(height: 16),
-                                Text('Veriler yükleniyor...'),
+                                const CircularProgressIndicator(),
+                                const SizedBox(height: 16),
+                                Text(context.l10n.loadingData),
                               ],
                             ),
                           ),
@@ -105,15 +105,15 @@ class _HomePageState extends State<HomePage> {
                       }
 
                       if (state is HomeInitial) {
-                        return const Center(
+                        return Center(
                           child: Padding(
-                            padding: EdgeInsets.all(20.0),
+                            padding: const EdgeInsets.all(20.0),
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                CircularProgressIndicator(),
-                                SizedBox(height: 16),
-                                Text('Başlatılıyor...'),
+                                const CircularProgressIndicator(),
+                                const SizedBox(height: 16),
+                                Text(context.l10n.startingUp),
                               ],
                             ),
                           ),

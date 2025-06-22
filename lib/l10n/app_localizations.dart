@@ -364,6 +364,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Search for plants'**
   String get searchForPlants;
+
+  /// No description provided for @loadingData.
+  ///
+  /// In en, this message translates to:
+  /// **'Loading data...'**
+  String get loadingData;
+
+  /// No description provided for @startingUp.
+  ///
+  /// In en, this message translates to:
+  /// **'Starting up...'**
+  String get startingUp;
+
+  /// No description provided for @verifyingData.
+  ///
+  /// In en, this message translates to:
+  /// **'Verifying data...'**
+  String get verifyingData;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {
