@@ -18,12 +18,106 @@
   "process": "İşlem",
   "year": "Yıl",
   "month": "Ay",
+  "subscription_monthly_auto_renew": "$2.99/ay, otomatik yenilenir",
   "subscription_trial_then_yearly_price": "İlk 3 gün ücretsiz, ardından yıllık 529,9$/yıl",
   "subscription_monthly_price_auto_renew": "Aylık {price}, otomatik yenilenir",
   "trial_try_free": "3 gün ücretsiz dene",
-  "trial_description": "3 günlük deneme süresi sona erdikten sonra iptal etmediğiniz sürece yıllık ₺274,99 ücret alınır. Yıllık abonelik otomatik olarak yenilenir.",
+  "trial_description": "3 günlük deneme süresi sona erdikten sonra iptal etmediğiniz sürece yıllık ₺274.99 ücret alınır. Yıllık abonelik otomatik olarak yenilenir.",
   "terms": "Şartlar",
   "privacy": "Gizlilik",
   "restore": "Satın alım geri yükleme",
-  "save": "İndirim"
+  "save": "İndirim",
+  "hiPlantLover": "Merhaba, bitki sever!",
+  "goodAfternoon": "İyi Öğleden Sonra! ⛅",
+  "categoriesLoading": "Kategoriler yükleniyor...",
+  "dataLoading": "Veriler yükleniyor...",
+  "questionsLoading": "Sorular yükleniyor...",
+  "tryAgain": "Tekrar Dene",
+  "categoriesAndQuestionsError": "Kategoriler ve Sorular yüklenirken hata oluştu: {message}",
+  "@categoriesAndQuestionsError": {
+    "placeholders": {
+      "message": {
+        "type": "String"
+      }
+    }
+  },
+  "categoriesError": "Kategoriler yüklenirken hata oluştu: {message}",
+  "@categoriesError": {
+    "placeholders": {
+      "message": {
+        "type": "String"
+      }
+    }
+  },
+  "questionsError": "Sorular yüklenirken hata oluştu: {message}",
+  "@questionsError": {
+    "placeholders": {
+      "message": {
+        "type": "String"
+      }
+    }
+  },
+  "unexpectedError": "Beklenmeyen bir hata oluştu: {message}",
+  "@unexpectedError": {
+    "placeholders": {
+      "message": {
+        "type": "String"
+      }
+    }
+  },
+  "premium": "ÜCRETSİZ Premium Mevcut",
+  "upgrade": "Hesabınızı yükseltmek için dokunun!",
+  "featureUnlimitedPlantIdentify": "Limitsiz Bitki Tanımlama",
+  "featureFasterProcess": "Daha Hızlı İşlem",
+  "featureUnlimited": "Limitsiz",
+  "subscriptionMonthlyPrice": "{price}/ay, otomatik yenilenir",
+  "@subscriptionMonthlyPrice": {
+    "placeholders": {
+      "price": {
+        "type": "String"
+      }
+    }
+  },
+  "subscriptionYearlyPrice": "İlk 3 gün ücretsiz, ardından {price}/yıl",
+  "@subscriptionYearlyPrice": {
+    "placeholders": {
+      "price": {
+        "type": "String"
+      }
+    }
+  },
+  "tryFreeForDays": "{days} gün ücretsiz dene",
+  "@tryFreeForDays": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "trialDescription": "{days} günlük deneme süresi sona erdikten sonra iptal etmediğiniz sürece yıllık {price} ücret alınır. Yıllık abonelik otomatik olarak yenilenir.",
+  "@trialDescription": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "price": {
+        "type": "String"
+      }
+    }
+  },
+  "termsAndPrivacyAndRestore": "{terms}  •  {privacy}  •  {restore}",
+  "@termsAndPrivacyAndRestore": {
+    "placeholders": {
+      "terms": {
+        "type": "String"
+      },
+      "privacy": {
+        "type": "String"
+      },
+      "restore": {
+        "type": "String"
+      }
+    }
+  },
+  "searchForPlants": "Bitki ara"
 }

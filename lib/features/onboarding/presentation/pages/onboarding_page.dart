@@ -114,7 +114,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
                     DotsIndicator(
                       dotsCount: 3,
                       animate: true,
-                      position: state.toDouble() - 1,
+                      position: state - 1,
                     ),
                   Gap(20.h),
                 ],

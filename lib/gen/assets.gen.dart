@@ -16,8 +16,16 @@ class $AssetsPngGen {
   AssetGenImage get fasterIcon =>
       const AssetGenImage('assets/png/faster_icon.png');
 
+  /// File path: assets/png/home_background.png
+  AssetGenImage get homeBackground =>
+      const AssetGenImage('assets/png/home_background.png');
+
   /// File path: assets/png/line.png
   AssetGenImage get line => const AssetGenImage('assets/png/line.png');
+
+  /// File path: assets/png/message_icon.png
+  AssetGenImage get messageIcon =>
+      const AssetGenImage('assets/png/message_icon.png');
 
   /// File path: assets/png/onboarding.png
   AssetGenImage get onboarding =>
@@ -40,7 +48,9 @@ class $AssetsPngGen {
   /// List of all assets
   List<AssetGenImage> get values => [
     fasterIcon,
+    homeBackground,
     line,
+    messageIcon,
     onboarding,
     onboardingCareGuides,
     plant,

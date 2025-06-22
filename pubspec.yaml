@@ -43,7 +43,6 @@ flutter:
 
   assets:
     - assets/png/
-    - assets/svg/
 
   fonts:
     - family: Roboto

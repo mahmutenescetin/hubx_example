@@ -212,7 +212,7 @@ abstract class AppLocalizations {
   /// No description provided for @trial_description.
   ///
   /// In en, this message translates to:
-  /// **'After the 3-day free trial period you’ll be charged ₺274.99 per year unless you cancel before the trial expires. Yearly Subscription is Auto-Renewable.'**
+  /// **'After the 3-day free trial period you\'ll be charged ₺274.99 per year unless you cancel before the trial expires. Yearly Subscription is Auto-Renewable.'**
   String get trial_description;
 
   /// No description provided for @terms.
@@ -238,6 +238,132 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Save'**
   String get save;
+
+  /// No description provided for @hiPlantLover.
+  ///
+  /// In en, this message translates to:
+  /// **'Hi, plant lover!'**
+  String get hiPlantLover;
+
+  /// No description provided for @goodAfternoon.
+  ///
+  /// In en, this message translates to:
+  /// **'Good Afternoon! ⛅'**
+  String get goodAfternoon;
+
+  /// No description provided for @categoriesLoading.
+  ///
+  /// In en, this message translates to:
+  /// **'Categories loading...'**
+  String get categoriesLoading;
+
+  /// No description provided for @dataLoading.
+  ///
+  /// In en, this message translates to:
+  /// **'Data loading...'**
+  String get dataLoading;
+
+  /// No description provided for @questionsLoading.
+  ///
+  /// In en, this message translates to:
+  /// **'Questions loading...'**
+  String get questionsLoading;
+
+  /// No description provided for @tryAgain.
+  ///
+  /// In en, this message translates to:
+  /// **'Try Again'**
+  String get tryAgain;
+
+  /// No description provided for @categoriesAndQuestionsError.
+  ///
+  /// In en, this message translates to:
+  /// **'Error loading categories and questions: {message}'**
+  String categoriesAndQuestionsError(String message);
+
+  /// No description provided for @categoriesError.
+  ///
+  /// In en, this message translates to:
+  /// **'Error loading categories: {message}'**
+  String categoriesError(String message);
+
+  /// No description provided for @questionsError.
+  ///
+  /// In en, this message translates to:
+  /// **'Error loading questions: {message}'**
+  String questionsError(String message);
+
+  /// No description provided for @unexpectedError.
+  ///
+  /// In en, this message translates to:
+  /// **'An unexpected error occurred: {message}'**
+  String unexpectedError(String message);
+
+  /// No description provided for @premium.
+  ///
+  /// In en, this message translates to:
+  /// **'FREE Premium Available'**
+  String get premium;
+
+  /// No description provided for @upgrade.
+  ///
+  /// In en, this message translates to:
+  /// **'Tap to upgrade your account!'**
+  String get upgrade;
+
+  /// No description provided for @featureUnlimitedPlantIdentify.
+  ///
+  /// In en, this message translates to:
+  /// **'Unlimited Plant Identify'**
+  String get featureUnlimitedPlantIdentify;
+
+  /// No description provided for @featureFasterProcess.
+  ///
+  /// In en, this message translates to:
+  /// **'Faster Process'**
+  String get featureFasterProcess;
+
+  /// No description provided for @featureUnlimited.
+  ///
+  /// In en, this message translates to:
+  /// **'Unlimited'**
+  String get featureUnlimited;
+
+  /// No description provided for @subscriptionMonthlyPrice.
+  ///
+  /// In en, this message translates to:
+  /// **'{price}/month, auto renewable'**
+  String subscriptionMonthlyPrice(String price);
+
+  /// No description provided for @subscriptionYearlyPrice.
+  ///
+  /// In en, this message translates to:
+  /// **'First 3 days free, then {price}/year'**
+  String subscriptionYearlyPrice(String price);
+
+  /// No description provided for @tryFreeForDays.
+  ///
+  /// In en, this message translates to:
+  /// **'Try free for {days} days'**
+  String tryFreeForDays(int days);
+
+  /// No description provided for @trialDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'After the {days}-day free trial period you\'ll be charged {price} per year unless you cancel before the trial expires. Yearly Subscription is Auto-Renewable.'**
+  String trialDescription(int days, String price);
+
+  /// No description provided for @termsAndPrivacyAndRestore.
+  ///
+  /// In en, this message translates to:
+  /// **'{terms}  •  {privacy}  •  {restore}'**
+  String termsAndPrivacyAndRestore(String terms, String privacy, String restore);
+
+  /// No description provided for @searchForPlants.
+  ///
+  /// In en, this message translates to:
+  /// **'Search for plants'**
+  String get searchForPlants;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {
