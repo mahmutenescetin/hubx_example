@@ -31,7 +31,7 @@ class PlantSearchBar extends StatelessWidget {
         ),
         decoration: InputDecoration(
           prefixIcon: const Icon(Icons.search, color: Colors.grey, size: 26),
-          hintText: 'Search for plants',
+          hintText: context.l10n.searchForPlants,
           hintStyle: context.textStyles.b15Regular400.copyWith(
             color: context.colors.appColors.inputColor,
           ),

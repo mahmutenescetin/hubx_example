@@ -6,7 +6,7 @@ import 'package:hubx_example/features/paywall/presentation/pages/paywall_page.da
 
 part 'app_router.gr.dart';
 
-@AutoRouterConfig(replaceInRouteName: 'Screen|Page,Route')
+@AutoRouterConfig()
 class AppRouter extends RootStackRouter {
   @override
   RouteType get defaultRouteType => const RouteType.material();

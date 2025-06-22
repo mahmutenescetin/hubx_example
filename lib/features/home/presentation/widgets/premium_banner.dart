@@ -30,7 +30,7 @@ class PremiumBanner extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       GradientText(
-                        'FREE Premium Available',
+                        context.l10n.premium,
                         style: context.textStyles.b16Regular700,
                         gradient: const LinearGradient(colors: [
                           Color.fromRGBO(229, 201, 144, 1),
@@ -39,7 +39,7 @@ class PremiumBanner extends StatelessWidget {
                       ),
                       const SizedBox(height: 2),
                       GradientText(
-                        'Tap to upgrade your account!',
+                        context.l10n.upgrade,
                         style: context.textStyles.b13Regular400,
                         gradient: const LinearGradient(
                           colors: [

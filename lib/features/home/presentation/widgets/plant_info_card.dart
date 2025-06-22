@@ -2,23 +2,19 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:hubx_example/core/utils/extensions/context_extensions.dart';
+import 'package:hubx_example/features/home/domain/entities/question.dart';
 
 class PlantInfoCard extends StatelessWidget {
-  final String imagePath;
-  final String title;
-  final VoidCallback? onTap;
+  final Question question;
 
   const PlantInfoCard({
-    required this.imagePath,
-    required this.title,
+    required this.question,
     super.key,
-    this.onTap,
   });
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: onTap,
       child: Container(
         width: 240,
         margin: const EdgeInsets.only(right: 10),
@@ -37,8 +33,8 @@ class PlantInfoCard extends StatelessWidget {
           child: Stack(
             children: [
               Positioned.fill(
-                child: Image.asset(
-                  imagePath,
+                child: Image.network(
+                  question.image,
                   fit: BoxFit.fill,
                 ),
               ),
@@ -61,7 +57,7 @@ class PlantInfoCard extends StatelessWidget {
                 right: 16,
                 bottom: 20,
                 child: Text(
-                  title,
+                  question.question,
                   style: context.textStyles.b15Regular400.copyWith(
                     color: context.colors.appColors.white,
                   ),

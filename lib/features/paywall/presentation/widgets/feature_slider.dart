@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hubx_example/core/utils/extensions/context_extensions.dart';
 import 'package:hubx_example/features/paywall/presentation/widgets/feature_card.dart';
 import 'package:hubx_example/gen/assets.gen.dart';
 
@@ -14,18 +15,18 @@ class FeatureSlider extends StatelessWidget {
         children: [
           FeatureCard(
             imagePath: Assets.png.scannerIcon.path,
-            title: 'Unlimited',
-            subtitle: 'Plant Identify',
+            title: context.l10n.featureUnlimited,
+            subtitle: context.l10n.plantIdentify,
           ),
           FeatureCard(
             imagePath: Assets.png.fasterIcon.path,
-            title: 'Faster',
-            subtitle: 'Process',
+            title: context.l10n.faster,
+            subtitle: context.l10n.process,
           ),
           FeatureCard(
             imagePath: Assets.png.scannerIcon.path,
-            title: 'Accurate',
-            subtitle: 'Results',
+            title: context.l10n.featureUnlimited,
+            subtitle: context.l10n.plantIdentify,
           ),
         ],
       ),
