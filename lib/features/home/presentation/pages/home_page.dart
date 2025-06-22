@@ -74,7 +74,9 @@ class _HomePageState extends State<HomePage> {
                   Padding(
                     padding: EdgeInsets.symmetric(horizontal: 20.r),
                     child: PlantSearchBar(
-                      onChanged: (value) {},
+                      onChanged: (value) {
+                        context.read<HomeCubit>().search(value);
+                      },
                     ),
                   ),
                 ],
