@@ -160,4 +160,13 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get searchForPlants => 'Bitki ara';
+
+  @override
+  String get loadingData => 'Veriler yükleniyor...';
+
+  @override
+  String get startingUp => 'Başlatılıyor...';
+
+  @override
+  String get verifyingData => 'Veriler doğrulanıyor...';
 }

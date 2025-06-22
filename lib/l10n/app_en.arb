@@ -116,5 +116,8 @@
       }
     }
   },
-  "searchForPlants": "Search for plants"
+  "searchForPlants": "Search for plants",
+  "loadingData": "Loading data...",
+  "startingUp": "Starting up...",
+  "verifyingData": "Verifying data..."
 }

@@ -160,4 +160,13 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get searchForPlants => 'Search for plants';
+
+  @override
+  String get loadingData => 'Loading data...';
+
+  @override
+  String get startingUp => 'Starting up...';
+
+  @override
+  String get verifyingData => 'Verifying data...';
 }
