@@ -5,9 +5,9 @@ class DioClient {
 
   DioClient({required this.dio}) {
     dio
-      ..options.baseUrl = 'https://dummy-api-jtg6bessta-ey.a.run.app'
-      ..options.connectTimeout = const Duration(seconds: 10)
-      ..options.receiveTimeout = const Duration(seconds: 10)
+      ..options.baseUrl = 'http://dummy-api-jtg6bessta-ey.a.run.app'
+      ..options.connectTimeout = const Duration(seconds: 30)
+      ..options.receiveTimeout = const Duration(seconds: 30)
       ..interceptors.add(LogInterceptor(
         requestBody: true,
         responseBody: true,
