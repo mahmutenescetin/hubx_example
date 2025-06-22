@@ -1,16 +1,68 @@
-# hubx_example
+# HubX Example
 
-Hubx example app
+A Flutter plant identification and care application example.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+- **Plant Categories**: Organizes different plant types into categories
+- **Plant Questions**: Informative questions about plant care
+- **Search Function**: Search plants by name
+- **Multi-language Support**: Turkish and English
+- **Clean Architecture**: Layered architecture structure
+- **Dependency Injection**: Dependency management with GetIt
 
-A few resources to get you started if this is your first Flutter project:
+## Technologies
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- **Flutter**: UI framework
+- **Bloc/Cubit**: State management
+- **Dio**: HTTP client
+- **Auto Route**: Navigation
+- **GetIt**: Dependency injection
+- **Flutter ScreenUtil**: Responsive design
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Project Structure
+
+```
+lib/
+├── core/
+│   ├── di/           # Dependency injection
+│   ├── network/      # API client
+│   ├── router/       # Navigation
+│   ├── theme/        # UI theme
+│   └── utils/        # Utility functions
+├── features/
+│   ├── home/         # Home page
+│   ├── onboarding/   # Onboarding pages
+│   └── paywall/      # Premium features
+└── shared/           # Shared widgets
+```
+
+## Installation
+
+1. Install Flutter SDK
+2. Clone the project
+3. Install dependencies:
+   ```bash
+   flutter pub get
+   ```
+4. Run the application:
+   ```bash
+   flutter run
+   ```
+
+## API
+
+The application uses the following endpoints:
+- `GET /getCategories` - Plant categories
+- `GET /getQuestions` - Plant questions
+
+## Contributing
+
+1. Fork the project
+2. Create a feature branch
+3. Commit your changes
+4. Submit a pull request
+
+## License
+
+This project is licensed under the MIT License.
