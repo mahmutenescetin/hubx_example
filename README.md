@@ -7,7 +7,6 @@ A Flutter plant identification and care application example.
 - **Plant Categories**: Organizes different plant types into categories
 - **Plant Questions**: Informative questions about plant care
 - **Search Function**: Search plants by name
-- **Multi-language Support**: Turkish and English
 - **Clean Architecture**: Layered architecture structure
 - **Dependency Injection**: Dependency management with GetIt
 
@@ -53,6 +52,7 @@ lib/
 ## API
 
 The application uses the following endpoints:
+
 - `GET /getCategories` - Plant categories
 - `GET /getQuestions` - Plant questions
 
