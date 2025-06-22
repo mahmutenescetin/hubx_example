@@ -382,6 +382,30 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Verifying data...'**
   String get verifyingData;
+
+  /// No description provided for @navBarHome.
+  ///
+  /// In en, this message translates to:
+  /// **'Home'**
+  String get navBarHome;
+
+  /// No description provided for @navBarDiagnose.
+  ///
+  /// In en, this message translates to:
+  /// **'Diagnose'**
+  String get navBarDiagnose;
+
+  /// No description provided for @navBarMyGarden.
+  ///
+  /// In en, this message translates to:
+  /// **'My Garden'**
+  String get navBarMyGarden;
+
+  /// No description provided for @navBarProfile.
+  ///
+  /// In en, this message translates to:
+  /// **'Profile'**
+  String get navBarProfile;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

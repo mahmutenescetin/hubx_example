@@ -119,5 +119,9 @@
   "searchForPlants": "Search for plants",
   "loadingData": "Loading data...",
   "startingUp": "Starting up...",
-  "verifyingData": "Verifying data..."
+  "verifyingData": "Verifying data...",
+  "navBarHome": "Home",
+  "navBarDiagnose": "Diagnose",
+  "navBarMyGarden": "My Garden",
+  "navBarProfile": "Profile"
 }

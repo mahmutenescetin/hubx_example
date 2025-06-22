@@ -25,38 +25,41 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return ScreenUtilInit(
       child: Builder(
-        builder: (context) => MaterialApp.router(
-          supportedLocales: const [
-            Locale('en'),
-            Locale('tr'),
-          ],
-          localizationsDelegates: const [
-            AppLocalizations.delegate,
-            GlobalMaterialLocalizations.delegate,
-            GlobalCupertinoLocalizations.delegate,
-            GlobalWidgetsLocalizations.delegate,
-          ],
-          locale: const Locale('en'),
-          routerConfig: getIt<AppRouter>().config(),
-          theme: ThemeData.light().copyWith(
-            extensions: [
-              AppThemeExtension(
-                textStyles: AppTextStyles(),
-                colors: AppColors(),
-                assets: const Assets.light(),
-              ),
+        builder: (context) {
+          final appRouter = getIt<AppRouter>();
+          return MaterialApp.router(
+            supportedLocales: const [
+              Locale('en'),
+              Locale('tr'),
             ],
-          ),
-          darkTheme: ThemeData.dark().copyWith(
-            extensions: [
-              AppThemeExtension(
-                textStyles: AppTextStyles(),
-                colors: AppColors(),
-                assets: const Assets.dark(),
-              ),
+            localizationsDelegates: const [
+              AppLocalizations.delegate,
+              GlobalMaterialLocalizations.delegate,
+              GlobalCupertinoLocalizations.delegate,
+              GlobalWidgetsLocalizations.delegate,
             ],
-          ),
-        ),
+            locale: const Locale('en'),
+            routerConfig: appRouter.config(),
+            theme: ThemeData.light().copyWith(
+              extensions: [
+                AppThemeExtension(
+                  textStyles: AppTextStyles(),
+                  colors: AppColors(),
+                  assets: const Assets.light(),
+                ),
+              ],
+            ),
+            darkTheme: ThemeData.dark().copyWith(
+              extensions: [
+                AppThemeExtension(
+                  textStyles: AppTextStyles(),
+                  colors: AppColors(),
+                  assets: const Assets.dark(),
+                ),
+              ],
+            ),
+          );
+        },
       ),
     );
   }
