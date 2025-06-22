@@ -4,7 +4,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:gap/gap.dart';
+import 'package:hubx_example/core/di/injection.dart';
 import 'package:hubx_example/core/router/app_router.dart';
+import 'package:hubx_example/core/services/user_service.dart';
 import 'package:hubx_example/core/utils/extensions/context_extensions.dart';
 import 'package:hubx_example/features/onboarding/presentation/bloc/onboarding_cubit.dart';
 import 'package:hubx_example/features/onboarding/presentation/widgets/onboarding_care_guides.dart';
@@ -34,6 +36,15 @@ class _OnboardingPageState extends State<OnboardingPage> {
   void dispose() {
     _pageController.dispose();
     super.dispose();
+  }
+
+  void _onComplete() async {
+    final userService = getIt<UserService>();
+    await userService.setFirstTimeComplete();
+    await userService.setOnboardingComplete();
+    if (mounted) {
+      context.router.replace(const PaywallRoute());
+    }
   }
 
   @override
@@ -87,7 +98,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
                           curve: Curves.easeInOut,
                         );
                       } else {
-                        context.router.replace(const PaywallRoute());
+                        _onComplete();
                       }
                     },
                     text: state < 1

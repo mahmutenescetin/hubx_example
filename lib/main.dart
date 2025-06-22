@@ -27,6 +27,7 @@ class MyApp extends StatelessWidget {
       child: Builder(
         builder: (context) {
           final appRouter = getIt<AppRouter>();
+
           return MaterialApp.router(
             supportedLocales: const [
               Locale('en'),

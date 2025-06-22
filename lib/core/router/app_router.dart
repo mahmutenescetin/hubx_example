@@ -12,11 +12,19 @@ part 'app_router.gr.dart';
 
 @AutoRouterConfig(replaceInRouteName: 'Page,Route')
 class AppRouter extends _$AppRouter {
+  final String? initialRoute;
+
+  AppRouter({this.initialRoute});
+
   @override
   List<AutoRoute> get routes => [
-        AutoRoute(page: OnboardingRoute.page, initial: true),
+        AutoRoute(
+          page: OnboardingRoute.page,
+          initial: initialRoute == OnboardingRoute.name,
+        ),
         AutoRoute(
           page: DashboardRoute.page,
+          initial: initialRoute == DashboardRoute.name,
           children: [
             AutoRoute(page: HomeRoute.page, initial: true),
             AutoRoute(page: DiagnoseRoute.page),
@@ -24,7 +32,10 @@ class AppRouter extends _$AppRouter {
             AutoRoute(page: ProfileRoute.page),
           ],
         ),
-        AutoRoute(page: PaywallRoute.page),
+        AutoRoute(
+          page: PaywallRoute.page,
+          initial: initialRoute == PaywallRoute.name,
+        ),
       ];
 
   @override
