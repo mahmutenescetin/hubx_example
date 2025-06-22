@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:hubx_example/core/utils/extensions/context_extensions.dart';
 import 'package:hubx_example/features/home/domain/entities/question.dart';
 import 'package:hubx_example/features/home/presentation/widgets/plant_info_card.dart';
 
@@ -15,12 +14,7 @@ class PlantInfoCardSlider extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     if (questions.isEmpty) {
-      return SizedBox(
-        height: 140.h,
-        child: Center(
-          child: Text(context.l10n.questionsLoading),
-        ),
-      );
+      return const SizedBox();
     }
 
     return SizedBox(
