@@ -122,5 +122,9 @@
   "searchForPlants": "Bitki ara",
   "loadingData": "Veriler yükleniyor...",
   "startingUp": "Başlatılıyor...",
-  "verifyingData": "Veriler doğrulanıyor..."
+  "verifyingData": "Veriler doğrulanıyor...",
+  "navBarHome": "Anasayfa",
+  "navBarDiagnose": "Teşhis",
+  "navBarMyGarden": "Bahçem",
+  "navBarProfile": "Profil"
 }

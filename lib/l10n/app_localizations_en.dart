@@ -169,4 +169,16 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get verifyingData => 'Verifying data...';
+
+  @override
+  String get navBarHome => 'Home';
+
+  @override
+  String get navBarDiagnose => 'Diagnose';
+
+  @override
+  String get navBarMyGarden => 'My Garden';
+
+  @override
+  String get navBarProfile => 'Profile';
 }

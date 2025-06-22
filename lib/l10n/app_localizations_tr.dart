@@ -169,4 +169,16 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get verifyingData => 'Veriler doğrulanıyor...';
+
+  @override
+  String get navBarHome => 'Anasayfa';
+
+  @override
+  String get navBarDiagnose => 'Teşhis';
+
+  @override
+  String get navBarMyGarden => 'Bahçem';
+
+  @override
+  String get navBarProfile => 'Profil';
 }
