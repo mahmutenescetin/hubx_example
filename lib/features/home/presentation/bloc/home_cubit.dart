@@ -17,7 +17,7 @@ class HomeCubit extends Cubit<HomeState> {
   HomeCubit({
     required this.getCategoriesUseCase,
     required this.getQuestionsUseCase,
-  }) : super(HomeInitial());
+  }) : super(HomeLoading());
 
   Future<void> loadData() async {
     emit(HomeLoading());

@@ -1,6 +1,5 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:gap/gap.dart';
 import 'package:hubx_example/core/utils/extensions/context_extensions.dart';
@@ -12,6 +11,7 @@ import 'package:hubx_example/features/home/presentation/widgets/plant_search_bar
 import 'package:hubx_example/features/home/presentation/widgets/premium_banner.dart';
 import 'package:hubx_example/gen/assets.gen.dart';
 import 'package:hubx_example/shared/widgets/reusable_text.dart';
+import 'package:get_it/get_it.dart';
 
 @RoutePage()
 class HomePage extends StatefulWidget {
@@ -26,7 +26,7 @@ class _HomePageState extends State<HomePage> {
   void initState() {
     super.initState();
     WidgetsBinding.instance.addPostFrameCallback((_) {
-      context.read<HomeCubit>().loadData();
+      GetIt.I<HomeCubit>().loadData();
     });
   }
 
@@ -75,7 +75,7 @@ class _HomePageState extends State<HomePage> {
                     padding: EdgeInsets.symmetric(horizontal: 20.r),
                     child: PlantSearchBar(
                       onChanged: (value) {
-                        context.read<HomeCubit>().search(value);
+                        GetIt.I<HomeCubit>().search(value);
                       },
                     ),
                   ),
@@ -83,13 +83,39 @@ class _HomePageState extends State<HomePage> {
               ),
               Expanded(
                 child: SingleChildScrollView(
-                  child: BlocBuilder<HomeCubit, HomeState>(
-                    builder: (context, state) {
+                  child: StreamBuilder<HomeState>(
+                    stream: GetIt.I<HomeCubit>().stream,
+                    builder: (context, snapshot) {
+                      final state = snapshot.data ?? GetIt.I<HomeCubit>().state;
+
                       if (state is HomeLoading) {
                         return const Center(
                           child: Padding(
                             padding: EdgeInsets.all(20.0),
-                            child: CircularProgressIndicator(),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                CircularProgressIndicator(),
+                                SizedBox(height: 16),
+                                Text('Veriler yükleniyor...'),
+                              ],
+                            ),
+                          ),
+                        );
+                      }
+
+                      if (state is HomeInitial) {
+                        return const Center(
+                          child: Padding(
+                            padding: EdgeInsets.all(20.0),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                CircularProgressIndicator(),
+                                SizedBox(height: 16),
+                                Text('Başlatılıyor...'),
+                              ],
+                            ),
                           ),
                         );
                       }
@@ -109,7 +135,7 @@ class _HomePageState extends State<HomePage> {
                                 const SizedBox(height: 16),
                                 ElevatedButton(
                                   onPressed: () {
-                                    context.read<HomeCubit>().loadData();
+                                    GetIt.I<HomeCubit>().loadData();
                                   },
                                   child: Text(context.l10n.tryAgain),
                                 ),
