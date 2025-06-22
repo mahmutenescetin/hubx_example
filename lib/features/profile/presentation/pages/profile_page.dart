@@ -13,4 +13,4 @@ class ProfilePage extends StatelessWidget {
       ),
     );
   }
-} 
+}

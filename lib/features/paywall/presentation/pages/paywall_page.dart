@@ -3,7 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:gap/gap.dart';
+import 'package:hubx_example/core/di/injection.dart';
 import 'package:hubx_example/core/router/app_router.dart';
+import 'package:hubx_example/core/services/user_service.dart';
 import 'package:hubx_example/core/utils/extensions/context_extensions.dart';
 import 'package:hubx_example/features/paywall/domain/enums/paywall_plan.dart';
 import 'package:hubx_example/features/paywall/presentation/bloc/patwall_cubit.dart';
@@ -17,6 +19,11 @@ import 'package:hubx_example/shared/widgets/spannable.dart';
 @RoutePage()
 class PaywallPage extends StatelessWidget {
   const PaywallPage({super.key});
+
+  Future<void> _onTryFree() async {
+    final userService = getIt<UserService>();
+    await userService.setPaywallComplete();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -63,7 +70,12 @@ class PaywallPage extends StatelessWidget {
                   top: context.padding.top + 16,
                   right: 16,
                   child: GestureDetector(
-                    onTap: () => context.router.replace(const HomeRoute()),
+                    onTap: () async {
+                      await _onTryFree();
+                      if (context.mounted) {
+                        context.router.replace(const DashboardRoute());
+                      }
+                    },
                     child: Container(
                       decoration: BoxDecoration(
                         color: Colors.black.withValues(alpha: 0.4),
@@ -137,10 +149,13 @@ class PaywallPage extends StatelessWidget {
                                   Gap(24.h),
                                   ReusableElevatedButton(
                                     text: context.l10n.trial_try_free,
-                                    onPressed: () {
-                                      context.router.replace(
-                                        const HomeRoute(),
-                                      );
+                                    onPressed: () async {
+                                      await _onTryFree();
+                                      if (context.mounted) {
+                                        context.router.replace(
+                                          const DashboardRoute(),
+                                        );
+                                      }
                                     },
                                   ),
                                 ],
